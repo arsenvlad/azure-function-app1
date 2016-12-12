@@ -5,6 +5,7 @@ using Microsoft.WindowsAzure.Storage.Table;
 
 public static HttpResponseMessage Run(Deployment deployment, CloudTable outTable, TraceWriter log)
 {
+    // Updated via GitHub 12/11/2016 19:53 CST
     // curl -X POST -H "Content-Type: application/json" -d '{"subscriptionID":"123","deploymentName":"deployment1","product":"product1","vmName":"vm1","details":"details1"}' https://avfunction1.azurewebsites.net/api/AddDeployment?code=DzW0qCyzy4UgWacb9XYzy1zLS3dizGQqes7xyKRgiVX8aER5VW3fmA==
 
     if (string.IsNullOrEmpty(deployment.SubscriptionID))
